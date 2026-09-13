@@ -1,5 +1,5 @@
 // ─── plugins/manhwa.js ───
-// 𝑳𝑰𝑮𝑯𝑻 ┇🩸┇ 𝑩𝑶𝑻 - Manhwa Plugin 📚
+// 𝑱.𝑨.𝑵 𝑩𝑶𝑻 - Manhwa Plugin 📚
 
 import axios from 'axios';
 import cheerio from 'cheerio';
@@ -15,8 +15,8 @@ const cleanContext = (jid) => ({
     isForwarded: true,
     forwardingScore: 1,
     forwardedNewsletterMessageInfo: {
-        newsletterJid: '120363405545946827@newsletter',
-        newsletterName: '𝑳𝑰𝑮𝑯𝑻 ┇🩸┇ 𝑪𝑯𝑨𝑵𝑵𝑬𝑳',
+        newsletterJid: '120363401670228863@newsletter',
+        newsletterName: '𝑭𝒍𝒂𝒔𝒉𝒃𝒂𝒄𝒌',
         serverMessageId: 0
     }
 });
