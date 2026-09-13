@@ -112,8 +112,8 @@ const cleanContext = (jid) => ({
     isForwarded: true,
     forwardingScore: 1,
     forwardedNewsletterMessageInfo: {
-        newsletterJid: '120363405545946827@newsletter',
-        newsletterName: '𝑳𝑰𝑮𝑯𝑻 ┇🩸┇ 𝑪𝑯𝑨𝑵𝑵𝑬𝑳',
+        newsletterJid: '120363401670228863@newsletter',
+        newsletterName: '𝑭𝒍𝒂𝒔𝒉𝒃𝒂𝒄𝒌',
         serverMessageId: 0
     }
 });
@@ -130,7 +130,7 @@ const run = async (m, { text, conn, command }) => {
         const menuText = `❐═━━━═╊⊰🩸⊱╉═━━━═❐\n*🕋 ┇ مـواقـيـت الـصـلاة*\n\nالمرجو اختيار دولتك لجلب مواقيت الصلاة تلقائياً 📿\n❐═━━━═╊⊰🩸⊱╉═━━━═❐`;
 
         await conn.sendButtonNormal(m.chat, {
-            media: { url: "https://i.supaimg.com/374589ce-56ae-4068-ba73-60f3b228637f/0b22c6a0-3522-4e3d-b1b8-120642cb25b2.jpg" },
+            media: { url: "https://ibb.co/sSK8chJ" },
             mediaType: 'image',
             caption: menuText,
             buttons: [
@@ -182,10 +182,10 @@ const run = async (m, { text, conn, command }) => {
 *🕋 ┇ الـعـشـاء ⇇* ${isha}
 
 ❐═━━━═╊⊰🩸⊱╉═━━━═❐
-> *𝑳𝑰𝑮𝑯𝑻 ┇🩸┇ 𝑩𝑶𝑻*`;
+> *𝑱.𝑨.𝑵 𝑩𝑶𝑻*`;
 
         await conn.sendMessage(m.chat, {
-            image: { url: "https://i.supaimg.com/374589ce-56ae-4068-ba73-60f3b228637f/0b22c6a0-3522-4e3d-b1b8-120642cb25b2.jpg" },
+            image: { url: "https://ibb.co/sSK8chJ" },
             caption: resultMessage,
             contextInfo: cleanContext(m.sender)
         }, { quoted: m });
