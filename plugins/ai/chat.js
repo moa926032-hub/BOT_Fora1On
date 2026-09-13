@@ -6,8 +6,8 @@ const handler = async (m, { conn, text, bot }) => {
   m.reply(res);
 };
 
-handler.usage = ["لايت"];
+handler.usage = ["چان"];
 handler.category = "ai";
-handler.command = ["لايت"];
+handler.command = ["چان"];
 
 export default handler;
