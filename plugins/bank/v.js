@@ -7,13 +7,13 @@ const handler = async (m, { conn, command, text }) => {
     
     if (command === "تسجيل") {
         if (!text) {
-            return m.reply(`*📝 طريقة التسجيل:*\n\nتسجيل الاسم|العمر\n\nمثال:\nتسجيل ڤينوم|20`);
+            return m.reply(`*📝 طريقة التسجيل:*\n\nتسجيل الاسم|العمر\n\nمثال:\nتسجيل فرعون|20`);
         }
         
         const [name, age] = text.split('|').map(s => s.trim());
         
         if (!name || !age) {
-            return m.reply(`*❌ خطأ:* يجب كتابة الاسم والعمر مفصولين بـ |\n\nمثال:\nتسجيل ڤينوم|20`);
+            return m.reply(`*❌ خطأ:* يجب كتابة الاسم والعمر مفصولين بـ |\n\nمثال:\nتسجيل فرعون|20`);
         }
         
         if (isNaN(age) || age < 1 || age > 30) {
@@ -23,7 +23,7 @@ const handler = async (m, { conn, command, text }) => {
         user.name = name;
         user.age = parseInt(age);
         
-        const profilePic = await conn.profilePictureUrl(m.sender, 'image').catch(() => 'https://i.pinimg.com/originals/11/26/97/11269786cdb625c60213212aa66273a9.png');
+        const profilePic = await conn.profilePictureUrl(m.sender, 'image').catch(() => 'https://ibb.co/sSK8chJ');
         
         const msg = `╭─┈─┈─┈─⟞📝⟝─┈─┈─┈─╮
 ┃ *✅ تـم الـتـسـجـيـل بـنـجـاح*
@@ -45,12 +45,12 @@ const handler = async (m, { conn, command, text }) => {
                 isForwarded: true,
                 forwardingScore: 1,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363405545946827@newsletter',
-                    newsletterName: '𝑳𝑰𝑮𝑯𝑻 ┇🩸┇ 𝑪𝑯𝑨𝑵𝑵𝑬𝑳',
+                    newsletterJid: '120363401670228863@newsletter',
+                    newsletterName: '𝑭𝒍𝒂𝒔𝒉𝒃𝒂𝒄𝒌',
                     serverMessageId: 0
                 },
                 externalAdReply: {
-                    title: "𝑳𝑰𝑮𝑯𝑻 𝑩𝑶𝑻 ┇ للبوت الـرقـمـي",
+                    title: "𝑱.𝑨.𝑵 𝑩𝑶𝑻 ┇ للبوت الـرقـمـي",
                     body: "تـسـجـيـل جـديـد فـي الـبوت",
                     thumbnailUrl: profilePic,
                     sourceUrl: '',
@@ -69,7 +69,7 @@ const handler = async (m, { conn, command, text }) => {
         delete user.name;
         delete user.age;
         
-        const profilePic = await conn.profilePictureUrl(m.sender, 'image').catch(() => 'https://i.pinimg.com/originals/11/26/97/11269786cdb625c60213212aa66273a9.png');
+        const profilePic = await conn.profilePictureUrl(m.sender, 'image').catch(() => 'https://ibb.co/sSK8chJ');
         
         const msg = `╭─┈─┈─┈─⟞🗑️⟝─┈─┈─┈─╮
 ┃ *✅ تـم حـذف الـتـسـجـيـل*
@@ -90,12 +90,12 @@ const handler = async (m, { conn, command, text }) => {
                 isForwarded: true,
                 forwardingScore: 1,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363405545946827@newsletter',
-                    newsletterName: '𝑳𝑰𝑮𝑯𝑻 ┇🩸┇ 𝑪𝑯𝑨𝑵𝑵𝑬𝑳',
+                    newsletterJid: '120363401670228863@newsletter',
+                    newsletterName: '𝑭𝒍𝒂𝒔𝒉𝒃𝒂𝒄𝒌',
                     serverMessageId: 0
                 },
                 externalAdReply: {
-                    title: "𝑳𝑰𝑮𝑯𝑻 𝑩𝑶𝑻 ┇ للبوت الـرقـمـي",
+                    title: "𝑱.𝑨.𝑵 𝑩𝑶𝑻 ┇ للبوت الـرقـمـي",
                     body: "تـم حـذف الـتـسـجـيـل",
                     thumbnailUrl: profilePic,
                     sourceUrl: '',
