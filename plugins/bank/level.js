@@ -60,14 +60,14 @@ export default async function before(m, { conn }) {
                 isForwarded: true,
                 forwardingScore: 1,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363405545946827@newsletter',
-                    newsletterName: '𝑳𝑰𝑮𝑯𝑻 ┇🩸┇ 𝑪𝑯𝑨𝑵𝑵𝑬𝑳',
+                    newsletterJid: '120363401670228863@newsletter',
+                    newsletterName: '𝑭𝒍𝒂𝒔𝒉𝒃𝒂𝒄𝒌',
                     serverMessageId: 0
                 },
                 externalAdReply: {
-                    title: "𝐋𝐈𝐆𝐇𝐓 𝐁𝐎𝐓 ┇🩸┇ نظام الرتب",
+                    title: "𝑱.𝑨.𝑵 𝑩𝑶𝑻 ┇🩸┇ نظام الرتب",
                     body: "تـرقـيـة فـي الـمـسـتـوى",
-                    thumbnailUrl: "https://i.pinimg.com/originals/81/89/fd/8189fd909bbae4ba4e8f1d940f500a60.jpg",
+                    thumbnailUrl: "https://ibb.co/sSK8chJ",
                     sourceUrl: '',
                     mediaType: 1,
                     renderLargerThumbnail: true
