@@ -1,16 +1,16 @@
 // ╮••─๋︩︪──๋︩︪─═⊐‹⧫›⊏═─๋︩︪──๋︩︪─┈☇
 // ☃️ Plugin : بحث بينتريست فيديو
-// ⚡ Bot : 𝑳𝑰𝑮𝑯𝑻 ┇🩸┇ 𝑩𝑶𝑻
-// 🍷 Developer : 𝐴𝐻𝑀𝐸𝐷 𝐴𝐵𝑈𝐴𝐿𝐺𝐴𝑆𝐼𝑀
-// ━ ╼╃ ⌬〔 𝑳𝑰𝑮𝑯𝑻 〕⌬ ╄╾ ━
-// 120363405545946827@newsletter
+// ⚡ Bot : 𝑱.𝑨.𝑵 𝑩𝑶𝑻
+// 🍷 Developer : 𝑴𝑶𝑯𝑨𝑴𝑴𝑬𝑫 𝑨𝒁𝒁𝑨𝑴
+// ━ ╼╃ ⌬〔 𝑱.𝑨.𝑵 𝑩𝑶𝑻 〕⌬ ╄╾ ━
+// 120363401670228863@newsletter
 
 import { generateWAMessageFromContent, proto, prepareWAMessageMedia } from '@whiskeysockets/baileys'
 import axios from 'axios'
 
 const API_BASE = 'https://engez.a7a.online/api/v1'
 const PINTEREST_ENDPOINT = `${API_BASE}/search/pinterest`
-const FOOTER = '𝑳𝑰𝑮𝑯𝑻 ┇🩸┇ 𝑩𝑶𝑻'
+const FOOTER = '𝑱.𝑨.𝑵 𝑩𝑶𝑻'
 const MAX_CARDS = 3
 const MAX_TRIED = 10
 const UA = 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36'
@@ -20,8 +20,8 @@ const context = (jid) => ({
     isForwarded: true,
     forwardingScore: 1,
     forwardedNewsletterMessageInfo: {
-        newsletterJid: '120363405545946827@newsletter',
-        newsletterName: '𝑳𝑰𝑮𝑯𝑻 ┇🩸┇ 𝑪𝑯𝑨𝑵𝑵𝑬𝑳',
+        newsletterJid: '120363401670228863@newsletter',
+        newsletterName: '𝑭𝒍𝒂𝒔𝒉𝒃𝒂𝒄𝒌',
         serverMessageId: 0
     }
 });
