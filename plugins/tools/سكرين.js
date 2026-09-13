@@ -16,7 +16,7 @@ const run = async (m, { conn, command, args }) => {
         // إرسال لقطة الشاشة كصورة طبيعية صافية
         await conn.sendMessage(m.chat, {
             image: ssBuffer,
-            caption: `❐═━━━═╊⊰🩸⊱╉═━━━═❐\n*📸 ┇ تـم الـتـصـويـر بـنـجـاح!*\n❐═━━━═╊⊰🩸⊱╉═━━━═❐\n\n𝑳𝑰𝑮𝑯𝑻 ┇🩸┇ 𝑩𝑶𝑻`
+            caption: `❐═━━━═╊⊰🩸⊱╉═━━━═❐\n*📸 ┇ تـم الـتـصـويـر بـنـجـاح!*\n❐═━━━═╊⊰🩸⊱╉═━━━═❐\n\n𝑱.𝑨.𝑵 𝑩𝑶𝑻`
         }, { quoted: m });
 
         await m.react('✅');
