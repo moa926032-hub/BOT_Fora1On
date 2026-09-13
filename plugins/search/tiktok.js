@@ -16,14 +16,14 @@ if (data && data.length > 0) {
                 name: "cta_copy", 
                 params: { 
                     display_text: "قناة البوت", 
-                    copy_code: "https://whatsapp.com/channel/0029Vb7dTmNJENy9sp5yqi3T" 
+                    copy_code: "https://whatsapp.com/channel/0029VbAwIeZ7DAWtP59pqx3c" 
                 } 
             },
         ],
         mentions: [m.sender],
         newsletter: {
-            name: '𝑳𝑰𝑮𝑯𝑻 ┇🩸┇ 𝑪𝑯𝑨𝑵𝑵𝑬𝑳',
-            jid: '120363405545946827@newsletter'
+            name: '𝑭𝒍𝒂𝒔𝒉𝒃𝒂𝒄𝒌',
+            jid: '120363401670228863@newsletter'
         },
     }, global.reply_status)
 } else {
