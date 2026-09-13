@@ -1,18 +1,18 @@
 // ─── plugins/quran.js ───
-// 𝑳𝑰𝑮𝑯𝑻 ┇🩸┇ 𝑩𝑶𝑻 - Holy Quran Plugin 🕋
+// 𝑱.𝑨.𝑵 𝑩𝑶𝑻 - Holy Quran Plugin 🕋
 
 import axios from 'axios';
 
 const HEADER = "❐═━━━═╊⊰🩸⊱╉═━━━═❐";
-const QURAN_COVER = 'https://i.supaimg.com/374589ce-56ae-4068-ba73-60f3b228637f/0b22c6a0-3522-4e3d-b1b8-120642cb25b2.jpg';
+const QURAN_COVER = 'https://ibb.co/sSK8chJ';
 
 const cleanContext = (jid) => ({
     mentionedJid: [jid],
     isForwarded: true,
     forwardingScore: 1,
     forwardedNewsletterMessageInfo: {
-        newsletterJid: '120363405545946827@newsletter',
-        newsletterName: '𝑳𝑰𝑮𝑯𝑻 ┇🩸┇ 𝑪𝑯𝑨𝑵𝑵𝑬𝑳',
+        newsletterJid: '120363401670228863@newsletter',
+        newsletterName: '𝑭𝒍𝒂𝒔𝒉𝒃𝒂𝒄𝒌',
         serverMessageId: 0
     }
 });
