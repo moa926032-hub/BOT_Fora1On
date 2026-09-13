@@ -24,7 +24,7 @@ const run = async (m, { conn, bot }) => {
   text += `\n> *_✓ الـمـجـمـوع: ${bots.length}_*`;
 
   const { images } = bot.config.info;
-  const img = images?.[Math.floor(Math.random() * images.length)] || "https://i.supaimg.com/374589ce-56ae-4068-ba73-60f3b228637f/df4a4068-978a-4f77-afa8-bb5dd22968e1.jpg";
+  const img = images?.[Math.floor(Math.random() * images.length)] || "https://ibb.co/sSK8chJ";
 
   // إرسال صورة عادية مع الكابشن والمنشنات
   await conn.sendMessage(m.chat, {
