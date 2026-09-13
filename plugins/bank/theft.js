@@ -26,7 +26,7 @@ const handler = async (m, { conn }) => {
     if (!success) {
         const penalty = Math.floor(stealAmount / 2);
         userSender.xp = Math.max(0, (userSender.xp || 0) - penalty);
-        const pic = await conn.profilePictureUrl(m.sender, 'image').catch(() => 'https://i.pinimg.com/originals/11/26/97/11269786cdb625c60213212aa66273a9.png');
+        const pic = await conn.profilePictureUrl(m.sender, 'image').catch(() => 'https://ibb.co/sSK8chJ');
         await conn.sendMessage(m.chat, {
             image: { url: pic },
             caption: `╭─┈─┈─⟞🚨⟝─┈─┈─╮
