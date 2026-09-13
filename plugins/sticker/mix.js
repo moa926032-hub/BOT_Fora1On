@@ -25,7 +25,7 @@ const run = async (m, { conn, text, command }) => {
             let stiker = await (new Sticker(x.url, { 
                 type: 'full', 
                 categories: x.tags,
-                pack: '𝑳𝑰𝑮𝑯𝑻 ┇🩸┇ 𝑩𝑶𝑻', 
+                pack: '𝑱.𝑨.𝑵 𝑩𝑶𝑻', 
                 author: '𝑬𝑴𝑶𝑱𝑰 𝑴𝑰𝑿' 
             })).toMessage();
             
