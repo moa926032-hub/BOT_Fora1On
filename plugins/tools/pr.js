@@ -14,7 +14,7 @@ const run = async (m, { conn, text, command }) => {
         
         await conn.sendMessage(m.chat, {
             image: { url: qrBuffer },
-            caption: `❐═━━━═╊⊰🩸⊱╉═━━━═❐\n*تـم إنـشـاء الـ ${commandText} بـنـجـاح!* \n❐═━━━═╊⊰🩸⊱╉═━━━═❐\n\n𝑳𝑰𝑮𝑯𝑻 ┇🩸┇ 𝑩𝑶𝑻`
+            caption: `❐═━━━═╊⊰🩸⊱╉═━━━═❐\n*تـم إنـشـاء الـ ${commandText} بـنـجـاح!* \n❐═━━━═╊⊰🩸⊱╉═━━━═❐\n\n𝑱.𝑨.𝑵 𝑩𝑶𝑻`
         }, { quoted: m });
 
     } catch (error) {
