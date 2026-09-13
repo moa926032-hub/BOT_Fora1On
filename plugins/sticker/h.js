@@ -6,10 +6,10 @@ const test = async (m, { conn, args }) => {
   let [pack, author] = args.join(" ").split(" | ");
   
   if (!args.length) {
-    return m.reply("📝 *الاستخدام الصحيح:*\n\n.حقوق اسم الباك | اسم المؤلف\n\n*مثال:*\n`.حقوق goko`");
+    return m.reply("📝 *الاستخدام الصحيح:*\n\n.حقوق اسم الباك | اسم المؤلف\n\n*مثال:*\n`.حقوق Mo ♡ JANAA`");
   }
   
-  if (!pack) pack = "𝑳𝑰𝑮𝑯𝑻 ┇🩸┇ 𝑩𝑶𝑻";
+  if (!pack) pack = "𝑱.𝑨.𝑵 𝑩𝑶𝑻";
   if (author === undefined) author = null;
   
   const q = await m.quoted;
@@ -18,7 +18,7 @@ const test = async (m, { conn, args }) => {
 
   await conn.sendMessage(
     m.chat,
-    { sticker: buffer, contextInfo: context(m.sender, "https://i.supaimg.com/374589ce-56ae-4068-ba73-60f3b228637f/64789104-e032-44cd-a94f-8531fd17522c.jpg") },
+    { sticker: buffer, contextInfo: context(m.sender, "https://ibb.co/sSK8chJ") },
     { quoted: global.reply_status }
   );
 };
@@ -33,13 +33,13 @@ const context = (jid, img) => ({
     isForwarded: true,
     forwardingScore: 1,
     forwardedNewsletterMessageInfo: {
-        newsletterJid: '120363405545946827@newsletter',
-        newsletterName: '𝑳𝑰𝑮𝑯𝑻 ┇🩸┇ 𝑪𝑯𝑨𝑵𝑵𝑬𝑳',
+        newsletterJid: '120363401670228863@newsletter',
+        newsletterName: '𝑭𝒍𝒂𝒔𝒉𝒃𝒂𝒄𝒌',
         serverMessageId: 0
     },
     externalAdReply: {
-        title: "𝑳𝑰𝑮𝑯𝑻 ┇🩸┇ 𝑩𝑶𝑻",
-        body: "𝐿𝐼𝐺𝐻𝑇 𝐵𝑂𝑇 𝐼𝑆 𝑇𝐻𝐸 𝐵𝐸𝑆𝑇🩸",
+        title: "𝑱.𝑨.𝑵 𝑩𝑶𝑻",
+        body: "𝑱.𝑨.𝑵 𝑩𝑶𝑻 𝐼𝑆 𝑇𝐻𝐸 𝐵𝐸𝑆𝑇🩸",
         thumbnailUrl: img,
         sourceUrl: '',
         mediaType: 1,
