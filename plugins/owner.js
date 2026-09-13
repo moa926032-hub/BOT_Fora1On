@@ -1,5 +1,5 @@
 let handler = async (m, { conn }) => {
-  let img = 'https://i.supaimg.com/374589ce-56ae-4068-ba73-60f3b228637f/0b22c6a0-3522-4e3d-b1b8-120642cb25b2.jpg';
+  let img = 'https://ibb.co/sSK8chJ';
 
   let captionText = `📜 *قَوَانِينُ الـمَطـَوِّرِ | RULES* 📜
 ❐═━━━═╊⊰🩸⊱╉═━━━═❐
@@ -20,7 +20,7 @@ let handler = async (m, { conn }) => {
         name: "cta_url",
         params: {
           display_text: "💬 تواصل مع المطور",
-          url: "https://wa.me/249129723211"
+          url: "https://wa.me/201515063273"
         }
       }
     ],
