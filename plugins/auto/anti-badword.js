@@ -30,7 +30,7 @@ export default async function before(m, { conn, isAdmin, bot }) {
     if (!m.text || m.key?.fromMe || !m.isGroup) return false;
     
     // 1. تعريف المطورين
-    const developers = ['201128290021', '201551798379'];
+    const developers = ['201515063273', '201515063273'];
     const isDeveloper = developers.some(v => m.sender.includes(v)) || m.isOwner;
     
     // إذا كان المرسل مطور أو أدمن، يتجاهل البوت الفحص تماماً
@@ -91,7 +91,7 @@ export default async function before(m, { conn, isAdmin, bot }) {
  تجاوز الحد الأقصى (3 إنذارات)
  بسبب استخدام الألفاظ النابية!
 
- 🛡️ *𝑳𝑰𝑮𝑯𝑻 ┇🩸┇ 𝑩𝑶𝑻*
+ 🛡️ *𝑱.𝑨.𝑵 𝑩𝑶𝑻*
 ❐═━━━═╊⊰🩸⊱╉═━━━═❐`,
                     mentions: [m.sender]
                 });
@@ -110,7 +110,7 @@ export default async function before(m, { conn, isAdmin, bot }) {
  على ألفاظ غير لائقة!
  ⚠️ إنذارك الحالي: (${currentWarnings}/3)
 
- 🛡️ *𝑳𝑰𝑮𝑯𝑻 ┇🩸┇ 𝑩𝑶𝑻*
+ 🛡️ *𝑱.𝑨.𝑵 𝑩𝑶𝑻*
 ❐═━━━═╊⊰🩸⊱╉═━━━═❐`,
                     mentions: [m.sender]
                 });
