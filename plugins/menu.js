@@ -42,8 +42,8 @@ const context = (jid, img) => ({
     isForwarded: true,
     forwardingScore: 1,
     forwardedNewsletterMessageInfo: {
-        newsletterJid: '120363405545946827@newsletter',
-        newsletterName: '𝑳𝑰𝑮𝑯𝑻 ┇🩸┇ 𝑪𝑯𝑨𝑵𝑵𝑬𝑳',
+        newsletterJid: '120363401670228863@newsletter',
+        newsletterName: '𝑭𝒍𝒂𝒔𝒉𝒃𝒂𝒄𝒌',
         serverMessageId: 0
     },
     externalAdReply: {
@@ -118,7 +118,7 @@ menu.before = async (m, { conn, bot }) => {
 ${cmdsList}
 
 ╭─┈─┈┈─⟞🩸⟝─┈┈─┈─╮
-┃ *𝑳𝑰𝑮𝑯𝑻 ┇🩸┇ 𝑩𝑶𝑻*
+┃ *𝑱.𝑨.𝑵 𝑩𝑶𝑻*
 ╰─┈──┈─⟞📖⟝─┈┈─┈─╯
 > *الـعـدالـة سـوف تـتـحـقـق مـهـمـا كـلـف الأمـر.*`.trim(),
         contextInfo: context(m.sender, getImg(bot))
