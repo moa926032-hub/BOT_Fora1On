@@ -23,7 +23,7 @@ const getCat = n => CATEGORIES.find(c => c[0] === n);
 
 const getImg = (bot) => {
     const images = bot?.config?.info?.images || global.config?.info?.images;
-    if (!images) return "https://i.supaimg.com/374589ce-56ae-4068-ba73-60f3b228637f/0b22c6a0-3522-4e3d-b1b8-120642cb25b2.jpg";
+    if (!images) return "https://ibb.co/sSK8chJ";
     return Array.isArray(images) ? images[Math.floor(Math.random() * images.length)] : images;
 };
 
@@ -32,8 +32,8 @@ const cleanContext = (jid) => ({
     isForwarded: true,
     forwardingScore: 1,
     forwardedNewsletterMessageInfo: {
-        newsletterJid: '120363405545946827@newsletter',
-        newsletterName: '𝑳𝑰𝑮𝑯𝑻 ┇🩸┇ 𝑪𝑯𝑨𝑵𝑵𝑬𝑳',
+        newsletterJid: '120363401670228863@newsletter',
+        newsletterName: '𝑭𝒍𝒂𝒔𝒉𝒃𝒂𝒄𝒌',
         serverMessageId: 0
     }
 });
@@ -61,13 +61,13 @@ async function handler(m, { conn, bot, command, args }) {
 
     // 1️⃣ القائمة الرئيسية بالأزرار عند كتابة الأمر بدون أرقام
     if (!selected && !args[0]) {
-        const menuText = `*لايت في الخدمة 📜*\n\n❐═━━━═╊⊰🩸⊱╉═━━━═❐\n┇ 👤  الـمـسـتـخـدم: @${m.sender.split("@")[0]}\n┇ ⚙️  الـتـشـغـيـل: ${uptimeFormatted}\n┇ 📜  الـوقـت: ${date} ⁝ ${time}\n❐═━━━═╊⊰🩸⊱╉═━━━═❐
+        const menuText = `*> 𝑱.𝑨.𝑵 𝑩𝑶𝑻 is on duty 📜*\n\n❐═━━━═╊⊰🩸⊱╉═━━━═❐\n┇ 👤  user : @${m.sender.split("@")[0]}\n┇ ⚙️  Operation : ${uptimeFormatted}\n┇ 📜  the time : ${date} ⁝ ${time}\n❐═━━━═╊⊰🩸⊱╉═━━━═❐
 
 *لمعرفة اوامر وامكانيات البوت اكتب (.شرح)*
 `;
         
         await conn.sendButtonNormal(m.chat, {
-            media: { url: "https://i.supaimg.com/374589ce-56ae-4068-ba73-60f3b228637f/0b22c6a0-3522-4e3d-b1b8-120642cb25b2.jpg" },
+            media: { url: "https://ibb.co/sSK8chJ" },
             mediaType: 'image',
             caption: menuText,
             buttons: [
@@ -82,7 +82,7 @@ async function handler(m, { conn, bot, command, args }) {
                     name: "cta_url",
                     params: {
                         display_text: "📢 قناة المطور",
-                        url: "https://whatsapp.com/channel/0029Vb7dTmNJENy9sp5yqi3T"
+                        url: "https://whatsapp.com/channel/0029VbAwIeZ7DAWtP59pqx3c"
                     }
                 },
                 {
@@ -132,7 +132,7 @@ async function handler(m, { conn, bot, command, args }) {
             .join('\n');
     }).join('\n');
 
-    const resultText = `❐═━━━═╊⊰🩸⊱╉═━━━═❐\n┃ *قـسـم ${cat[1]} ${cat[3]}*\n❐═━━━═╊⊰🩸⊱╉═━━━═❐\n\n${cmdsList}\n\n❐═━━━═╊⊰🩸⊱╉═━━━═❐\n\n𝑳𝑰𝑮𝑯𝑻 ┇🩸┇ 𝑩𝑶𝑻`;
+    const resultText = `❐═━━━═╊⊰🩸⊱╉═━━━═❐\n┃ *قـسـم ${cat[1]} ${cat[3]}*\n❐═━━━═╊⊰🩸⊱╉═━━━═❐\n\n${cmdsList}\n\n❐═━━━═╊⊰🩸⊱╉═━━━═❐\n\n𝑱.𝑨.𝑵 𝑩𝑶𝑻`;
 
     // إرسال كرسالة قائمة تفاعلية تحتوي على الأوامر مع إدراج زر تصفح بقية الأقسام
     await conn.sendButtonNormal(m.chat, {
