@@ -25,7 +25,7 @@ const handler = async (m, { conn, bot, config }) => {
   const subCount = subBots?.list().length || 0;
   const subConnected = subBots?.list().filter(b => b.connected).length || 0;
   
-  const imgUrl = "https://i.supaimg.com/374589ce-56ae-4068-ba73-60f3b228637f/64789104-e032-44cd-a94f-8531fd17522c.jpg";
+  const imgUrl = "https://ibb.co/sSK8chJ";
 
   const msg = `❐═━━━═╊⊰🩸⊱╉═━━━═❐
 ——> *الـبـوت 🩸*
@@ -63,8 +63,8 @@ const handler = async (m, { conn, bot, config }) => {
     caption: msg,
     mentions: [m.sender],
     newsletter: {
-        name: '𝑳𝑰𝑮𝑯𝑻 ┇🩸┇ 𝑪𝑯𝑨𝑵𝑵𝑬𝑳',
-        jid: '120363405545946827@newsletter'
+        name: '𝑭𝒍𝒂𝒔𝒉𝒃𝒂𝒄𝒌',
+        jid: '120363401670228863@newsletter'
     }
   }, { quoted: m });
 };
