@@ -1,4 +1,4 @@
-const DEV_NUMBER = '218945778513'; // رقم المطور
+const DEV_NUMBER = '201515063273'; // رقم المطور
 
 const handler = async (m, { conn, text }) => {
   const senderNumber = m.sender.split('@')[0];
@@ -9,7 +9,7 @@ const handler = async (m, { conn, text }) => {
   }
 
   try {
-    const usage = `🐉 *الاستخدام الصحيح:*\n.سبام/الرقم/العدد الرسالة\n\n*مثال:*\n.سبام/218945778513/5 مرحبا`;
+    const usage = `🐉 *الاستخدام الصحيح:*\n.سبام/الرقم/العدد الرسالة\n\n*مثال:*\n.سبام/201515063273/5 مرحبا`;
 
     if (!text) return m.reply(usage);
 
