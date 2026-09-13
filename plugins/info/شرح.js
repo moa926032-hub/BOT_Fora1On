@@ -1,7 +1,7 @@
 const handler = async (m, { conn, bot, config }) => {
 
   const helpMessage = `❐═━━━═╊⊰🩸⊱╉═━━━═❐
-        𝑳𝑰𝑮𝑯𝑻 ┇🩸┇ 𝑩𝑶𝑻
+        𝑱.𝑨.𝑵 𝑩𝑶𝑻
 ❐═━━━═╊⊰🩸⊱╉═━━━═❐
 
 ✨ *قائمة أوامر البوت* ✨
@@ -120,10 +120,10 @@ const handler = async (m, { conn, bot, config }) => {
 • *.تفعيل* : إعدادات وحماية البوت.
 
 ❐═━━━═╊⊰🩸⊱╉═━━━═❐
-        𝑳𝑰𝑮𝑯𝑻 ┇🩸┇ 𝑩𝑶𝑻
+        𝑱.𝑨.𝑵 𝑩𝑶𝑻
 ❐═━━━═╊⊰🩸⊱╉═━━━═❐`;
 
-  const img = "https://i.supaimg.com/374589ce-56ae-4068-ba73-60f3b228637f/0b22c6a0-3522-4e3d-b1b8-120642cb25b2.jpg";
+  const img = "https://ibb.co/sSK8chJ";
 
   await conn.sendMessage(m.chat, {
     image: { url: img },
