@@ -60,14 +60,14 @@ const handler = async (m, { conn, text, command }) => {
     const img =
       desc
         ? `https://picsum.photos/600/300`
-        : "https://i.supaimg.com/374589ce-56ae-4068-ba73-60f3b228637f/64789104-e032-44cd-a94f-8531fd17522c.jpg";
+        : "https://ibb.co/sSK8chJ";
 
     await conn.sendButton(
       m.chat,
       {
         imageUrl: img,
         bodyText: msg,
-        footerText: "𝑳𝑰𝑮𝑯𝑻 ¦🩸¦ 𝑩𝑶𝑻",
+        footerText: "𝑱.𝑨.𝑵 𝑩𝑶𝑻",
         buttons: [
           {
             name: "cta_copy",
