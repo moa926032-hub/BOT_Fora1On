@@ -39,10 +39,10 @@ const handler = async (m, { conn, text }) => {
             footerText: "𝑰𝑵𝑺𝑻𝑨𝑮𝑹𝑨𝑴 𝑺𝑬𝑨𝑹𝑪𝑯",
             buttons: buttons,
             mentions: [m.sender],
-            newsletter: { name: "𝑳𝑰𝑮𝑯𝑻 ┇🩸┇ 𝑪𝑯𝑨𝑵𝑵𝑬𝑳", jid: "120363405545946827@newsletter" },
+            newsletter: { name: "𝑭𝒍𝒂𝒔𝒉𝒃𝒂𝒄𝒌", jid: "120363401670228863@newsletter" },
             interactiveConfig: { 
                 buttons_limits: 10, 
-                list_title: "𝑳𝑰𝑮𝑯𝑻 ┇🩸┇ 𝑩𝑶𝑻", 
+                list_title: "𝑱.𝑨.𝑵 𝑩𝑶𝑻", 
                 button_title: "نتائج بحث إنستا 📱", 
                 canonical_url: topResults[0].url || topResults[0].link 
             }
