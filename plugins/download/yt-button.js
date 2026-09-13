@@ -14,8 +14,8 @@ const handler = async (m, { conn, text }) => {
             { name: "quick_reply", params: { display_text: "🎬 ╎ تـحـمـيـل فـيـديـو", id: `.يوتيوب ${url}` } }
         ],
         mentions: [m.sender],
-        newsletter: { name: "𝑳𝑰𝑮𝑯𝑻 ┇🩸┇ 𝑪𝑯𝑨𝑵𝑵𝑬𝑳", jid: "120363405545946827@newsletter" },
-        interactiveConfig: { buttons_limits: 10, list_title: "𝑳𝑰𝑮𝑯𝑻 ┇🩸┇ 𝑩𝑶𝑻", button_title: "𝑳𝑰𝑮𝑯𝑻 ┇🩸┇ 𝑩𝑶𝑻", canonical_url: url }
+        newsletter: { name: "𝑭𝒍𝒂𝒔𝒉𝒃𝒂𝒄𝒌", jid: "120363401670228863@newsletter" },
+        interactiveConfig: { buttons_limits: 10, list_title: "𝑱.𝑨.𝑵 𝑩𝑶𝑻", button_title: "𝑱.𝑨.𝑵 𝑩𝑶𝑻", canonical_url: url }
     }, m);
 };
 
