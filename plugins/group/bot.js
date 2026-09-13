@@ -1,5 +1,5 @@
 let handler = async (m, { conn }) => {
-    await conn.circular(m.chat, { vid: "https://files.catbox.moe/bqxzcl.mp4", sec: 200 }, m);
+    await conn.circular(m.chat, { vid: "https://files.catbox.moe/tdvci0.mp4", sec: 200 }, m);
 }
 
 handler.command = ["بوم"];
