@@ -1,9 +1,9 @@
 export default async function before(m, { conn }) {
 
   const videos = {
-    "لايت": "https://files.catbox.moe/ubs0yg.mp4",
-    "بوت": "https://files.catbox.moe/9b6x2n.mp4",
-    "تست": "https://files.catbox.moe/k0vxj9.mp4"
+    "لايت": "https://files.catbox.moe/tdvci0.mp4",
+    "بوت": "https://files.catbox.moe/tdvci0.mp4",
+    "تست": "https://files.catbox.moe/tdvci0.mp4"
   };
 
   const text = m.text?.trim();
