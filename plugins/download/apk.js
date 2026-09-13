@@ -7,7 +7,7 @@ const handler = async (m, { conn, text, command }) => {
 
     if (!text) {
         await conn.sendMessage(m.chat, {
-            text: `╭───⟢❲ 𝑳𝑰𝑮𝑯𝑻 ┇🩸┇ 𝑩𝑶𝑻 ❳╰───⟢\n\n⚠️ *يرجى كتابة اسم التطبيق للبحث عنه.* \n\n_طريقة الاستعمال:_\n.${command} Instagram`
+            text: `╭───⟢❲ 𝑱.𝑨.𝑵 𝑩𝑶𝑻 ❳╰───⟢\n\n⚠️ *يرجى كتابة اسم التطبيق للبحث عنه.* \n\n_طريقة الاستعمال:_\n.${command} Instagram`
         }, { quoted: m });
         return;
     }
@@ -20,7 +20,7 @@ const handler = async (m, { conn, text, command }) => {
 
         if (!results || !results.length) {
             await conn.sendMessage(m.chat, {
-                text: `╭───⟢❲ 𝑳𝑰𝑮𝑯𝑻 ┇🩸┇ 𝑩𝑶𝑻 ❳╰───⟢\n\n❌ *لم يتم العثور على التطبيق في APKPure، تأكد من الاسم.*`
+                text: `╭───⟢❲ 𝑱.𝑨.𝑵 𝑩𝑶𝑻 ❳╰───⟢\n\n❌ *لم يتم العثور على التطبيق في APKPure، تأكد من الاسم.*`
             }, { quoted: m });
             await conn.sendMessage(m.chat, { react: { text: "❌", key: m.key } });
             return;
@@ -33,7 +33,7 @@ const handler = async (m, { conn, text, command }) => {
 
         if (!downloadData || (!downloadData.download_link && !downloadData.dllink && !downloadData.url)) {
             await conn.sendMessage(m.chat, {
-                text: `╭───⟢❲ 𝑳𝑰𝑮𝑯𝑻 ┇🩸┇ 𝑩𝑶𝑻 ❳╰───⟢\n\n❌ *تعذر جلب رابط تحميل هذا التطبيق حالياً.*`
+                text: `╭───⟢❲ 𝑱.𝑨.𝑵 𝑩𝑶𝑻 ❳╰───⟢\n\n❌ *تعذر جلب رابط تحميل هذا التطبيق حالياً.*`
             }, { quoted: m });
             await conn.sendMessage(m.chat, { react: { text: "❌", key: m.key } });
             return;
@@ -48,7 +48,7 @@ const handler = async (m, { conn, text, command }) => {
         const appVersion = app.version || downloadData.version || 'محدث';
 
         // صياغة النص بأسلوب زخارف لايت بوت الشهير
-        const caption = `╭───⟢❲ 𝑳𝑰𝑮𝑯𝑻 ┇🩸┇ 𝑩𝑶𝑻 ❳╰───⟢
+        const caption = `╭───⟢❲ 𝑱.𝑨.𝑵 𝑩𝑶𝑻 ❳╰───⟢
 ┃ *📱 ┇ مـعـلـومـات الـتـطـبـيـق (APKPure)*
 ❐═━━━═╊⊰🩸⊱╉═━━━═❐
 
