@@ -14,7 +14,7 @@ let handler = async (m, { conn, text, command }) => {
  
  await conn.sendMessage(m.chat, {
       video: { url: smp4 },
-      caption: `> *تم بواسطة لايت*`,
+      caption: `> *تم بواسطة چان*`,
     }, { quoted: m });
 }
 
