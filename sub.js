@@ -6,7 +6,7 @@ const subBotModes = new Map();
 async function sub(client) {
   global.subBots = new SubBots(client.commandSystem)
   
-  SubBots.pariCode("LIGHTBOT") // Pairing
+  SubBots.pariCode("JANMOBOT") // Pairing
  
   const { config } = client;
 
