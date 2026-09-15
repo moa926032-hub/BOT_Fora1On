@@ -23,7 +23,7 @@ const getCat = n => CATEGORIES.find(c => c[0] === n);
 
 const getImg = (bot) => {
     const images = bot?.config?.info?.images || global.config?.info?.images;
-    if (!images) return "https://ibb.co/sSK8chJ";
+    if (!images) return "https://files.catbox.moe/o9n1ml.jpg";
     return Array.isArray(images) ? images[Math.floor(Math.random() * images.length)] : images;
 };
 
@@ -61,9 +61,38 @@ async function handler(m, { conn, bot, command, args }) {
 
     // 1️⃣ القائمة الرئيسية بالأزرار عند كتابة الأمر بدون أرقام
     if (!selected && !args[0]) {
-        const menuText = `*> 𝑱.𝑨.𝑵 𝑩𝑶𝑻 is on duty 📜*\n\n❐═━━━═╊⊰🩸⊱╉═━━━═❐\n┇ 👤  user : @${m.sender.split("@")[0]}\n┇ ⚙️  Operation : ${uptimeFormatted}\n┇ 📜  the time : ${date} ⁝ ${time}\n❐═━━━═╊⊰🩸⊱╉═━━━═❐
+        const menuText = `
+#Welcome to ♪ 𝑱.𝑨.𝑵 🩸 𓏺 BOT ⚡
 
-*لمعرفة اوامر وامكانيات البوت اكتب (.شرح)*
+˚.𖦹 ⋅━━┄━┄━┄━┄ ˹👁️˼ ━┄━┄━┄━┄━⋅ 𖦹.˚
+
+🝮 *الـمـسـتـخـدم* ˼👤˹ ⤺
+•「 *@${m.sender.split("@")[0]}* -🩸 」•
+
+🝮 *الـبـوت* ˼🤖˹ ⤺
+•「 *𝑱.𝑨.𝑵 𝑩𝑶𝑻* -⚡ 」•
+
+🝮 *حـالـة الـبـوت* ˼🟢˹ ⤺
+•「 *𝑶𝑵𝑳𝑰𝑵𝑬* -🩸 」•
+
+🝮 *وقـت الـتـشـغـيـل* ˼⏱️˹ ⤺
+•「 *${uptimeFormatted}* -⚡ 」•
+
+🝮 *الـتـاريـخ* ˼📅˹ ⤺
+•「 *${date}* -🩸 」•
+
+🝮 *الـوقـت* ˼🕐˹ ⤺
+•「 *${time}* -⚡ 」•
+
+˚.𖦹 ⋅━━┄━┄━┄━┄ ˹🇪🇬˼ ━┄━┄━┄━┄━⋅ 𖦹.˚
+
+♢ •┆˹‼️╵ *اخـتـر قـسـمـا مـن الـقـائـمـة ادنـاه* ╷⇊˼
+
+♢ 『𒆜  اكـتـب (.شرح) لمـعرفة أوامـر الـبـوت 𒆜』
+
+˚.𖦹 ⋅━━┄━┄━┄━┄ ˹🩸˼ ━┄━┄━┄━┄━⋅ 𖦹.˚
+
+> 𝑱.𝑨.𝑵 𝑩𝑶𝑻 • 𝑺𝒕𝒂𝒚 𝑪𝒐𝒏𝒏𝒆𝒄𝒕𝒆𝒅 🩸
 `;
         
         await conn.sendButtonNormal(m.chat, {
@@ -132,7 +161,19 @@ async function handler(m, { conn, bot, command, args }) {
             .join('\n');
     }).join('\n');
 
-    const resultText = `❐═━━━═╊⊰🩸⊱╉═━━━═❐\n┃ *قـسـم ${cat[1]} ${cat[3]}*\n❐═━━━═╊⊰🩸⊱╉═━━━═❐\n\n${cmdsList}\n\n❐═━━━═╊⊰🩸⊱╉═━━━═❐\n\n𝑱.𝑨.𝑵 𝑩𝑶𝑻`;
+    const resultText = `
+*╭─────𝐉.𝐀.𝐍 𝐁𝐎𝐓─────╮*
+> *القسم: 『 ${cat[1]} ${cat[3]} 』*
+> *عدد الأوامر: ${categoryCmds.length} أمر*
+*╰─────𝐉.𝐀.𝐍 𝐁𝐎𝐓─────╯*
+
+> *الأوامـر:*
+
+${cmdsList}
+
+> *𝐉.𝐀.𝐍 𝐁𝐎𝐓*
+> 𝐒𝐭𝐚𝐲 𝐂𝐨𝐧𝐧𝐞𝐜𝐭𝐞𝐝 🩸
+`;
 
     // إرسال كرسالة قائمة تفاعلية تحتوي على الأوامر مع إدراج زر تصفح بقية الأقسام
     await conn.sendButtonNormal(m.chat, {
