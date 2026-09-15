@@ -46,9 +46,9 @@ config.info = {
     author: '?.?.? ???'
   },
   images: [
-    "https://ibb.co/sSK8chJ",
-    "https://ibb.co/sSK8chJ",
-    "https://ibb.co/sSK8chJ"
+    "https://files.catbox.moe/o9n1ml.jpg",
+    "https://files.catbox.moe/o9n1ml.jpg",
+    "https://files.catbox.moe/o9n1ml.jpg"
   ]
 };
 
