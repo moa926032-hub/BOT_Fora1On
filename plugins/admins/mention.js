@@ -11,7 +11,7 @@ const cleanContext = (jid) => ({
 });
 
 async function handler(m, { conn }) {
-    const coverImageUrl = 'https://ibb.co/sSK8chJ';
+    const coverImageUrl = 'https://files.catbox.moe/o9n1ml.jpg';
 
     const sections = [{
         title: "📢 ┇ خيارات الاستدعاء المتاحة",
